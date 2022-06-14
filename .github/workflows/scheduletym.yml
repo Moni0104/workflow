@@ -1,0 +1,15 @@
+name: run job for every 10minutes
+
+on:
+  schedule:
+    
+    - cron:  '10 * * * * *'
+  
+runs-on: ubuntu latest
+jobs:
+  test_schedule:
+    steps:
+      -name: runs every 10min
+      run: echo "This step will always run for 10min"
+ 
+  
